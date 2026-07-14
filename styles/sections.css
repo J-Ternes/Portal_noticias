@@ -11,7 +11,7 @@
     border-radius: 4px;
     overflow: hidden;
     position: relative;
-    
+
     /* O & substitui o .card */
     &::before{
         content: "";
@@ -31,6 +31,11 @@
         bottom: 0;
 
         padding: 24px;
+
+        /* Condição para implementar o padding */
+        &:has(.text-lg){
+            padding: 12px;
+        }
 
         h2{
             margin-top: 8px;
