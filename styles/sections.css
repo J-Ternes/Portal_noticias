@@ -11,6 +11,7 @@
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    
     /* O & substitui o .card */
     &::before{
         content: "";
@@ -23,5 +24,17 @@
             #020617 100%
         );
 
+    }
+
+    figcaption{
+        position: absolute;
+        bottom: 0;
+
+        padding: 24px;
+
+        h2{
+            margin-top: 8px;
+        }
+    
     }
 }
